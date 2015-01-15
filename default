@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner" style="margin: 7.72px 4.49px 1.94px 6.72px; -ms-grid-row-span: 2;">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis" style="margin-left: 10px; margin-right: 100px; -ms-grid-column-span: 1;">
+                <span class="pagetitle" style="height: 84.45px;">Safe Zone
+                </span>
+            </h1>
+        </header>
+	<div class="Comment">
+		<h4 aria-label="Motto content" role="complementary" style="margin-top: -16px;margin-bottom: 1px; margin-left: 400px; height: 25.66px; width: 701px;">
+		Wherever the adventure takes you
+		</h4>
+	</div>
+	<UserControl x:Class="MapControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:m="clr-namespace:Microsoft.Maps.MapControl;assembly=Microsoft.Maps.MapControl">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <m:Map CredentialsProvider="{StaticResource MyCredentials}" Mode="AerialWithLabels" Center="37.806029,-122.407007" ZoomLevel="16"></m:Map>
+    </Grid style="width: 85px; height: 23.68px;"> 
+	</UserControl>
+        <section aria-label="Map content" role="Navigation" style="margin-top: 170px; margin-bottom: 0.75px;margin-left: 120px; -ms-grid-row-span: 2; -ms-grid-column-span: 2; width: 1205px; height: 180.66px;">
+            <p class="fragment pagecontrol" style="height: 393.68px; width: 1100px;">   
+            </p>
+        </section>
+		
+
+    	<img alt="wide_logo1" style="width: 530px; height: 127.23px; margin: -400px 157.42px 500px 600px;" src="/wide_logo1.png">
+    </div>
+</body>
+</html>
